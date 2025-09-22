@@ -9,8 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GetPosts = void 0;
+exports.AddPosts = exports.GetPosts = void 0;
 const GetPosts = () => __awaiter(void 0, void 0, void 0, function* () {
     return yield 'Posts';
 });
 exports.GetPosts = GetPosts;
+const AddPosts = (value) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log('VALUE : ', value);
+    return yield value;
+});
+exports.AddPosts = AddPosts;
