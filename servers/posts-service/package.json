@@ -16,7 +16,7 @@
     "axios": "^1.11.0",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "dotenv-safe": "^9.1.0",
     "express": "^5.1.0",
     "mssql": "^11.0.1",
@@ -25,6 +25,8 @@
   "devDependencies": {
     "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/dotenv-safe": "^9.1.0",
     "@types/express": "^5.0.3",
     "@types/mssql": "^9.1.8",
     "@types/node": "^24.3.1",

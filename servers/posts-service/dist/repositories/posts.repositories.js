@@ -10,12 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AddPosts = exports.GetPosts = void 0;
+const database_1 = require("../config/database");
 const GetPosts = () => __awaiter(void 0, void 0, void 0, function* () {
     return yield 'Posts';
 });
 exports.GetPosts = GetPosts;
 const AddPosts = (value) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log('VALUE : ', value);
-    return yield value;
+    const result = yield (0, database_1.mySqlMicroServicePool)(`EXECUTE MICRO.AddPosts N'${value}'`);
+    return result;
 });
 exports.AddPosts = AddPosts;

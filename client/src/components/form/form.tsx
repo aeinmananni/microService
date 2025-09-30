@@ -17,7 +17,7 @@ export default function Form() {
   return (
     <form
       onSubmit={handelSubmit}
-      className="flex flex-col border w-1/4 rounded-lg  shadow-lg p-3 gap-7 items-center"
+      className="flex flex-col border w-1/3 rounded-lg  shadow-lg p-3 gap-7 items-center h-max"
     >
       <MCInput
         className="border outline-none focus:ring-2 ring-offset-2 rounded-md px-3 py-2"
