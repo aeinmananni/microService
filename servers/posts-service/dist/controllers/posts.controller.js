@@ -14,10 +14,10 @@ const utils_1 = require("../utils");
 const posts_repositories_1 = require("../repositories/posts.repositories");
 exports.hadelGetPostsControll = (0, utils_1.asyncHandler)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield (0, posts_repositories_1.GetPosts)();
-    res.status(200).send(result);
+    res.status(200).send(result.recordset);
 }));
 exports.handelAddPosts = (0, utils_1.asyncHandler)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { title } = req.body;
     const result = yield (0, posts_repositories_1.AddPosts)(title);
-    res.status(200).send(result);
+    res.status(200).send(result.recordset);
 }));

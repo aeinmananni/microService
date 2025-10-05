@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AddPosts = exports.GetPosts = void 0;
 const database_1 = require("../config/database");
 const GetPosts = () => __awaiter(void 0, void 0, void 0, function* () {
-    return yield 'Posts';
+    return yield (0, database_1.mySqlMicroServicePool)(`EXECUTE MICRO.GetAllPosts`);
 });
 exports.GetPosts = GetPosts;
 const AddPosts = (value) => __awaiter(void 0, void 0, void 0, function* () {
